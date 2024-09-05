@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Museo</title>
+    <link rel="stylesheet" href="estilos/estilos.css">
+</head>
+
+<body>
+
+    <h1>The Metropolitan Museum of Art</h1>
+
+    <!-- ----------------------dropdown de departamentos------------------ -->
+
+    <div class="contenedor-elecciones">
+
+        <h3 class="label-seleccionar">Seleccione un depto:</h3>
+        <div class="cont-busquedas">
+            <select id="combo" class="drop-departamentos">
+
+            </select>
+            <input type="checkbox" onchange="habilitarBusqueda(this, 'combo')">
+        </div>
+        <h3 class="label-seleccionar">Locacion: </h3>
+
+        <div class="cont-busquedas">
+            <input type="text" class="inbox" id="geoLocacion">
+            <input type="checkbox" onchange="habilitarBusqueda(this, 'geoLocacion')">
+        </div>
+
+        <h3 class="label-seleccionar">Palabra clave: </h3>
+
+        <div class="cont-busquedas">
+            <input type="text" class="inbox" id="palabra">
+            <input type="checkbox" onchange="habilitarBusqueda(this, 'palabra')">
+        </div>
+
+        <div class="contenedor-btn">
+            <button class="btn-buscar" id="btn-bscar" onclick="buscar()">Buscar</button>
+        </div>
+
+
+
+        <div class="no-encontrado" id="no-encontrado">
+
+        </div>
+
+    </div>
+
+
+    <!-- ----------------------------Cargando----------------------------- -->
+
+    <div class="cont-carga">
+        <div class="carga" id="carga"></div>
+    </div>
+
+    <div id="botones-paginacion" class="botones-paginacion"></div>
+
+    <!-- ---------------------seccion de tarjetas------------------------- -->
+
+    <div class="seccion-tarjetas">
+
+
+        <div id="cont_tarjeta" class="cont-tarjeta">
+
+        </div>
+
+
+    </div>
+
+
+
+
+
+    </div>
+
+
+
+    <!-- ------------------------------------------------------------------ -->
+     <div class="footer">
+        
+     </div>
+
+    <script src="scripts/script.js"></script>
+
+
+</body>
+
+</html>

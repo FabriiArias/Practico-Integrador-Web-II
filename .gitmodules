@@ -1,0 +1,3 @@
+[submodule "path/to/folder"]
+	path = path/to/folder
+	url = https://github.com/statickidz/node-google-translate-skidz
